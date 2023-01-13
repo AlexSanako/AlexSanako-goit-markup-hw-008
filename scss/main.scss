@@ -1,0 +1,44 @@
+@import './base/base';
+@import './base/container';
+@import './utils/variables';
+
+// HEADER
+@import './components/header';
+@import './components/logo';
+@import './components/header-menu';
+@import './components/header-contact';
+
+// STUDIO
+// HERO
+@import './components/hero';
+// BUTTON
+@import './components/button';
+
+
+// MODAL
+@import './components/modal';
+@import './components/form-field';
+@import './components/modal-check';
+
+// BENEFITS
+@import './components/benefits';
+
+// WORK
+@import './components/work';
+
+// TEAMS
+@import './components/teams';
+@import './components/social';
+
+// CLIENT
+@import './components/client';
+
+// FOOTER
+@import './components/footer';
+@import './components/contact-group';
+@import './components/subscription';
+@import './components/mailing';
+
+// PORTFOLIO
+@import './components/filter';
+@import './components/project';

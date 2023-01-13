@@ -1,0 +1,11 @@
+// YEADER
+.header {
+    border-bottom: var(--border-color);
+
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+}
+
+

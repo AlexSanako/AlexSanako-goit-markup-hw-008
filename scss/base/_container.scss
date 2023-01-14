@@ -1,7 +1,13 @@
-.container {
-    width: 1200px;
+.container.adaptive {
+    max-width: 1200px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        max-width: 480px;
+    }
 }
+

@@ -1,5 +1,11 @@
 .subscription {
 
+    @media (min-width: 320px) and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
     &__tittle {
         color: var(--color-text-action);
         font-weight: 700;
@@ -8,8 +14,13 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 20px;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            margin-top: 60px;
+        }
     }
 }
+
 .subscription__link {
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--color-text-action);

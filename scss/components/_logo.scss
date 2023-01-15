@@ -14,11 +14,6 @@
 
 .logo-footer{
     color: var(--color-text-action);
-
-    @media (min-width: 320px) and (max-width: 480px) {
-        display: flex;
-        align-content: center;
-    }
     
 }
 .logo-header {

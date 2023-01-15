@@ -1,9 +1,17 @@
 .contacts-group {
     margin-top: 28px;
 
+    @media (min-width: 320px) and (max-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
     &__list {
         margin-right: 70px;
         list-style-type: none;
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            margin-right: 0;
+        }
     }
 
     &__item:not(:last-child) {

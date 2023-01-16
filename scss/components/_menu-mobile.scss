@@ -1,5 +1,6 @@
 .menu-mobile {
-    background-color: yellowgreen;
+    
+    background-color: var(--primary-background-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -7,6 +8,7 @@
     height: 100vh;
     padding-top: 48px;
     padding-left: 40px;
+    padding-bottom: 48px;
 
     &__list {
         display: flex; 
@@ -24,12 +26,20 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
         text-decoration: none;
-        
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+    &__link--current {
+        color: var(--accent-color);
     }
 }
 
 .menu-mobile__item { 
-
+    
     &:not(:last-child) {
         margin-bottom: 32px;
     }

@@ -1,0 +1,17 @@
+.menu-mobile-social {
+    
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    &__link {
+        color: var(--accent-color);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    }
+}

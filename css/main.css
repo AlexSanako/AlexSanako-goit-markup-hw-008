@@ -224,7 +224,7 @@ address {
 }
 
 .menu-mobile {
-  background-color: yellowgreen;
+  background-color: var(--primary-background-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -232,6 +232,7 @@ address {
   height: 100vh;
   padding-top: 48px;
   padding-left: 40px;
+  padding-bottom: 48px;
 }
 .menu-mobile__list {
   display: -webkit-box;
@@ -257,9 +258,76 @@ address {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
+.menu-mobile__link:hover, .menu-mobile__link:focus {
+  color: var(--accent-color);
+}
+.menu-mobile__link--current {
+  color: var(--accent-color);
+}
 
 .menu-mobile__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.menu-mobile-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 306px;
+}
+.menu-mobile-contact__tell {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.menu-mobile-contact__post {
+  color: var(--primary-text-color);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
+.menu-mobile-contact__post:hover, .menu-mobile-contact__post:focus {
+  color: var(--accent-color);
+}
+.menu-mobile-contact__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.menu-mobile-contact__item:last-child {
+  margin-bottom: 64px;
+}
+
+.menu-mobile-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+.menu-mobile-social__link {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .hero {

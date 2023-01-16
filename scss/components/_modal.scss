@@ -36,6 +36,11 @@
     min-width: 528px;
     background-color:var(--primary-background-color);
 
+    @media (min-width: 320px) and (max-width: 480px)  {
+        min-height: 609px;
+        min-width: 450px;
+    }
+
     &__container {
         display: flex;
         align-items: center;

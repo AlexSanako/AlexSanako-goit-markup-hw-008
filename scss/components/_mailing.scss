@@ -1,5 +1,7 @@
 .mailing {
     // margin-left: 93px;
+    
+    max-width: 480px;
    
 
     &__tittle {
@@ -45,6 +47,7 @@
     // max-height: 50px;
 
     @media (min-width: 320px) and (max-width: 480px) {
+        padding: 10px 64px 10px 31px;
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -78,7 +81,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
-        width: 450px;
+        width: 100%;
     }
 
     &:hover,

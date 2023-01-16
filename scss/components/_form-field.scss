@@ -14,6 +14,7 @@
     }
     &__control {
         position: relative;
+        width: 100%;
     }
     &__icon {
         fill: var(--tittle-text-color);
@@ -30,7 +31,8 @@
 .form-field__input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    width: 448px;
+    // width: 448px;
+    width: 100%;
     height: 40px;
     padding: 0 12px 0 40px;
     outline: none;
@@ -38,9 +40,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media (min-width: 320px) and (max-width: 480px) {
-        width: 370px;
-    }
+    // @media (min-width: 320px) and (max-width: 480px) {
+    //     width: 100%;
+    // }
 
     &:hover,
     &:focus {

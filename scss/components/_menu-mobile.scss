@@ -1,0 +1,36 @@
+.menu-mobile {
+    background-color: yellowgreen;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 48px;
+    padding-left: 40px;
+
+    &__list {
+        display: flex; 
+        list-style-type: none;
+        flex-direction: column;
+    }
+
+    &__link {
+        color: var(--tittle-text-color);
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        transition-property: opacity, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+        text-decoration: none;
+        
+    }
+}
+
+.menu-mobile__item { 
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}

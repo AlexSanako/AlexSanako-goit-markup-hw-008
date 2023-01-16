@@ -22,40 +22,97 @@
         <a href="./index.html" class="logo logo-header"
           ><span class="logo__partheader">Web</span>Studio</a
         >
-        <nav class="header-menu">
-          <ul class="header-menu__list">
-            <li class="header-menu__item header-menu__item--current">
-              <a class="header-menu__link header-menu__link--current" href="./index.html">Студія</a>
+        <!-- MENU -->
+        <div>
+          <button
+            class="menu__toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            ><svg class="menu-mobile__icon" width="24" height="16">
+              <use href="./images/symbol-defs.svg#icon-menu-mob"></use>
+            </svg>
+          </button>
+
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-menu__item header-menu__item--current">
+                <a class="header-menu__link header-menu__link--current" href="./index.html">Студія</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="/">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-contact">
+            <li class="header-contact__item">
+              <a href="maito:info@devstudio.com" class="header-contact__link">
+                <svg class="header-contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header-menu__item">
-              <a class="header-menu__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="header-menu__item">
-              <a class="header-menu__link" href="/">Контакти</a>
+            <li class="header-contact__item">
+              <a href="tel:+380961111111" class="header-contact__link"
+                ><svg class="header-contact__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
+        </div>
 
-            <!-- Контакти -->
-
-        <ul class="header-contact">
-          <li class="header-contact__item">
-            <a href="maito:info@devstudio.com" class="header-contact__link">
-              <svg class="header-contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-contact__item">
-            <a href="tel:+380961111111" class="header-contact__link"
-              ><svg class="header-contact__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        <!-- MOBILE MENU -->
+        <div class="menu-mobile js-menu-container" id="mobile-menu">
+          <button class="menu-mobile__toggle js-close-menu">
+            <svg class="menu-mobile__icon" width="24" height="16">
+              <use href="./images/symbol-defs.svg#icon-close-mob"></use>
+            </svg>
+          </button>
+          
+          <nav class="menu-mobile__nav">
+            <ul class="menu-mobile__list">
+              <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="./index.html">Студія</a>
+              </li>
+              <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="menu-mobile__item">
+                <a class="menu-mobile__link" href="/">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="menu-mobile-contact">
+            <li class="menu-mobile-contact__item">
+              <a href="maito:info@devstudio.com" class="menu-mobile-contact__link">info@devstudio.com</a>
+            </li>
+            <li class="menu-mobile-contact__item">
+              <a href="tel:+380961111111" class="menu-mobile-contact__link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+          <div class="menu-mobile-social">
+            <ul class="menu-mobile-social__list">
+              <li class="menu-mobile-social__item">
+                <a href="#" class="menu-mobile-social__link">Instagram</a>
+              </li>
+              <li class="menu-mobile-social__item">
+                <a href="#" class="menu-mobile-social__link">Twitter</a>
+              </li>
+              <li class="menu-mobile-social__item">
+                <a href="#" class="menu-mobile-social__link">Facebook</a>
+              </li>
+              <li class="menu-mobile-social__item">
+                <a href="#" class="menu-mobile-social__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -553,6 +610,13 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
 

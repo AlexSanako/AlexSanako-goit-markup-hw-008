@@ -23,15 +23,15 @@
           ><span class="logo__partheader">Web</span>Studio</a
         >
         <!-- MENU -->
-        <div>
-          <button
-            class="menu__toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            ><svg class="menu-mobile__icon" width="24" height="16">
-              <use href="./images/symbol-defs.svg#icon-menu-mob"></use>
-            </svg>
-          </button>
+        <button
+          class="menu-mobile__toggle js-open-menu header__button"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="menu-mobile__icon" width="24" height="16">
+            <use href="./images/symbol-defs.svg#icon-mob-open"></use>
+          </svg>
+        </button>
+        <div class="header__box" >
 
           <nav class="header-menu">
             <ul class="header-menu__list">
@@ -70,8 +70,8 @@
         <!-- MOBILE MENU -->
         <div class="menu-mobile js-menu-container" id="mobile-menu">
           <button class="menu-mobile__toggle js-close-menu">
-            <svg class="menu-mobile__icon" width="24" height="16">
-              <use href="./images/symbol-defs.svg#icon-close-mob"></use>
+            <svg class="menu-mobile__icon" width="19" height="19">
+              <use href="./images/symbol-defs.svg#icon-mob-close"></use>
             </svg>
           </button>
           

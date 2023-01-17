@@ -1,5 +1,6 @@
 .header-menu {
 
+    
     &__item {
         color: var(--tittle-text-color);
         position: relative;
@@ -38,7 +39,7 @@
     letter-spacing: 0.02em;
     transition-property: opacity, color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 32px;
     padding-bottom: 32px;
     text-decoration: none;

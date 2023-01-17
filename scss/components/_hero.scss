@@ -15,10 +15,10 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (max-width: 480px) {
         padding-top: 118px;
         padding-bottom: 198px;
-        height: 400px;
+        // height: 400px;
 
     }
 
@@ -45,7 +45,7 @@
         margin: 0 auto;
         margin-bottom: 30px;
 
-        @media (min-width: 320px) and (max-width: 480px) {
+        @media (max-width: 480px) {
             font-size: 26px;
             line-height: 1.61;
         }

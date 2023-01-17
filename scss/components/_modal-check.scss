@@ -6,7 +6,7 @@
     margin-top: 20px;
     margin-bottom: 30px;
 
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media (max-width: 480px) {
         margin-bottom: 31px;
     }
 
@@ -24,7 +24,7 @@
         border-radius: 2px;
         border: 2px solid var(--tittle-text-color);
 
-        @media (min-width: 320px) and (max-width: 480px) {
+        @media (max-width: 480px) {
             bottom: 1px;
         }
     }
@@ -39,7 +39,7 @@
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
 
-        @media (min-width: 320px) and (max-width: 480px) {
+        @media (max-width: 480px) {
             font-size: 12px;
             line-height: 1.16;
         }

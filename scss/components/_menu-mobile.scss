@@ -16,7 +16,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media (min-width: 481px) {
+    @media (min-width: 767px) {
         visibility: hidden;
     }
     &__toggle {
@@ -27,6 +27,14 @@
         background-color: var(--primary-background-color);
         top: 8px;
         right: 8px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+       
+    }
+    &__icon:hover, :focus {
+        fill: var(--accent-color);
     }
     &__list {
         display: flex; 

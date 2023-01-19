@@ -1068,10 +1068,6 @@ address {
   fill: var(--color-text-action);
 }
 
-.client {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .client__title {
   color: var(--tittle-text-color);
   font-weight: 700;
@@ -1091,7 +1087,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
   margin-top: 50px;
 }
 @media (max-width: 767px) {
@@ -1100,7 +1095,6 @@ address {
         flex-wrap: wrap;
     margin-top: 30px;
     text-align: center;
-    gap: 26px;
   }
 }
 .client__item {
@@ -1108,8 +1102,10 @@ address {
 }
 @media (max-width: 767px) {
   .client__item {
-    max-width: 210px;
-    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
 

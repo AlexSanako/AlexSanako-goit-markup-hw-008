@@ -1,6 +1,6 @@
 .client {
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
 
     &__title {
         color: var(--tittle-text-color);
@@ -18,7 +18,7 @@
     }
     &__list {
         display: flex;
-        gap: 30px;
+        // gap: 30px;
         
         margin-top: 50px;
 
@@ -26,8 +26,8 @@
             flex-wrap: wrap;
             margin-top: 30px;
             text-align: center;
-            // flex-basis: calc((100% - 4 * 15px)/2);
-            gap: 26px;
+            
+            // gap: 26px;
             
         }
     }
@@ -38,8 +38,11 @@
         height: 92px;
 
         @media (max-width: 767px) {
-            max-width: 210px;
-            width: 100%;
+            // max-width: 210px;
+            // width: 100%;
+            margin: auto;
+            margin-bottom: 30px;
+            flex-basis: calc((100% - 4 * 15px)/2);
             
             
         }

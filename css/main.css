@@ -1109,8 +1109,19 @@ address {
     text-align: center;
   }
 }
+
 .client__item {
   height: 92px;
+}
+@media (max-width: 767px) {
+  .client__item:nth-child(2n+1) {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .client__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .client__item:nth-child(3n+1) {
@@ -1124,13 +1135,15 @@ address {
 }
 @media (max-width: 767px) {
   .client__item {
+    max-width: 210px;
+    width: 100%;
     margin: auto;
     margin-bottom: 30px;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 767px) and (max-width: 1199px) {
   .client__item {
     max-width: 226px;
     width: 100%;

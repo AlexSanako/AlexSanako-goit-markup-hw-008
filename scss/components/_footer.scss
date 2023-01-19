@@ -18,5 +18,19 @@
             align-content: center;
             text-align: center;
         }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            text-align: center;
+        }
+    }
+    &__box {
+        flex-direction: row;
+        @media (min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
     }
 }

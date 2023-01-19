@@ -2,12 +2,27 @@
     display: flex;
     padding: 0;
     margin-left: auto;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+    @media (max-width: 1199px) {
+        flex-direction: column;
+    }
 }
 .header-contact__item {
-    margin-left: 40px;
+    // margin-left: 40px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 0;
+    }
 
     &:first-child{
         margin-left: 0;
+
+        @media (max-width: 1199px) {
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -27,12 +42,19 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
     &:hover,
     &:focus,
     & .header-contact__icon:hover,
     & .header-contact__icon:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
+
+    
 }
 }
 

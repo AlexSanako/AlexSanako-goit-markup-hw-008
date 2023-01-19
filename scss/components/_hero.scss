@@ -19,7 +19,11 @@
         padding-top: 118px;
         padding-bottom: 198px;
         // height: 400px;
+    }
 
+    @media (max-width: 1199px) {
+        padding-top: 118px;
+        padding-bottom: 188px;
     }
 
     // @media (min-width: 320px) and (max-width: 480px) {  
@@ -49,7 +53,13 @@
             font-size: 26px;
             line-height: 1.61;
         }
-        
+
+        @media (max-width: 1199px) {
+            font-size: 26px;
+            line-height: 1.61;
+            max-width: 360px;
+        }
+
     }
 }
 

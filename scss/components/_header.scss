@@ -2,28 +2,39 @@
 .header {
     border-bottom: var(--border-color);
     position: relative;
-    padding-top: 16px;
-    padding-bottom: 16px;
     padding-left: 15px;
+    padding-right: 15px;
 
     @media (max-width: 767px) {
         border: inherit;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 15px;
     }
 
-    &__box {
-        // 
-        @media (max-width: 767px) {
-            display: none;
+    // &__box {
+    //     // 
+    //     @media (max-width: 767px) {
+    //         display: none;
+    //     }
+
+    //     @media (max-width: 1199px) {
+    //         display: flex;
+    //     }
+    // }
+
+    &__container{
+
+        @media (max-width: 1199px) {
+            display: flex;
+            align-items: center;
         }
     }
-    // &__container{
-    //     display: flex;
-    //     align-items: center;
-    // }
 
     &__button {
         padding-top: 10px;
         padding-right: 10px;
+        
         @media (min-width: 767px) {
             display: none;
         }

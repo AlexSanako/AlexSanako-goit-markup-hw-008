@@ -31,13 +31,13 @@ address {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 1200px) {
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -81,18 +81,25 @@ address {
 .header {
   border-bottom: var(--border-color);
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
   padding-left: 15px;
+  padding-right: 15px;
 }
 @media (max-width: 767px) {
   .header {
     border: inherit;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
   }
 }
-@media (max-width: 767px) {
-  .header__box {
-    display: none;
+@media (max-width: 1199px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .header__button {
@@ -129,14 +136,18 @@ address {
   .logo-header {
     font-size: 24px;
     line-height: 1.16;
-    margin-top: 16px;
   }
 }
 
+@media (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+}
 .header-menu__item {
   color: var(--tittle-text-color);
   position: relative;
-  margin-left: 50px;
+  margin-left: 51px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -217,12 +228,32 @@ address {
   padding: 0;
   margin-left: auto;
 }
+@media (max-width: 767px) {
+  .header-contact {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .header-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
-.header-contact__item {
-  margin-left: 40px;
+@media (max-width: 1199px) {
+  .header-contact__item {
+    margin-bottom: 0;
+  }
 }
 .header-contact__item:first-child {
   margin-left: 0;
+}
+@media (max-width: 1199px) {
+  .header-contact__item:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 .header-contact__link {
@@ -247,6 +278,12 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 1199px) {
+  .header-contact__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 .header-contact__link:hover, .header-contact__link:focus, .header-contact__link .header-contact__icon:hover, .header-contact__link .header-contact__icon:focus {
   color: var(--accent-color);
@@ -420,6 +457,12 @@ address {
     padding-bottom: 198px;
   }
 }
+@media (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 188px;
+  }
+}
 .hero__container {
   text-align: center;
 }
@@ -439,6 +482,13 @@ address {
   .hero__tittle {
     font-size: 26px;
     line-height: 1.61;
+  }
+}
+@media (max-width: 1199px) {
+  .hero__tittle {
+    font-size: 26px;
+    line-height: 1.61;
+    max-width: 360px;
   }
 }
 
@@ -809,9 +859,6 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 @media (max-width: 767px) {
   .benefits__list {
@@ -824,11 +871,18 @@ address {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 1199px) {
+  .benefits__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
 .work {
   padding-top: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .work {
     display: none;
   }
@@ -955,13 +1009,10 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 767px) {
   .teams__list {

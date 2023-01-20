@@ -806,10 +806,6 @@ address {
   cursor: pointer;
 }
 
-.benefits {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .benefits__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1160,6 +1156,9 @@ address {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
   }
+  .client__item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .client__item {
@@ -1168,6 +1167,9 @@ address {
     margin-top: 30px;
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
         flex-basis: calc((100% - 90px) / 3);
+  }
+  .client__item:nth-child(-n+3) {
+    margin-top: 0;
   }
 }
 

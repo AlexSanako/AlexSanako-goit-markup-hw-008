@@ -9,7 +9,6 @@
         border: inherit;
         padding-top: 16px;
         padding-bottom: 16px;
-        padding-left: 15px;
     }
 
     // &__box {
@@ -28,7 +27,13 @@
         @media (max-width: 1199px) {
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
+        @media (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+        }
+        
     }
 
     &__button {

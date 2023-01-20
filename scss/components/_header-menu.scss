@@ -10,6 +10,10 @@
         margin-left: 51px;
         padding-top: 32px;
         padding-bottom: 32px;
+
+        @media (min-width: 1200px) {
+            margin-left: 50px;
+        }
     }
 }
 .header-menu__item--current {

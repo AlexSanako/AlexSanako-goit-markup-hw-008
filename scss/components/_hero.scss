@@ -12,18 +12,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
 
     @media (max-width: 767px) {
         padding-top: 118px;
         padding-bottom: 198px;
-        // height: 400px;
     }
 
     @media (max-width: 1199px) {
         padding-top: 118px;
         padding-bottom: 188px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 
     // @media (min-width: 320px) and (max-width: 480px) {  
@@ -40,12 +42,9 @@
     &__tittle {
         color: var(--color-text-action);
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
         letter-spacing: 0.06em;
         text-align: center;
         text-transform: uppercase;
-        max-width: 696px;
         margin: 0 auto;
         margin-bottom: 30px;
 
@@ -58,6 +57,11 @@
             font-size: 26px;
             line-height: 1.61;
             max-width: 360px;
+        }
+        @media (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
         }
 
     }

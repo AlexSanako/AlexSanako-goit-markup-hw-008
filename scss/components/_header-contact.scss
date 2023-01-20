@@ -1,7 +1,6 @@
 .header-contact {
     display: flex;
     padding: 0;
-    margin-left: auto;
 
     @media (max-width: 767px) {
         display: none;
@@ -9,19 +8,26 @@
     @media (max-width: 1199px) {
         flex-direction: column;
     }
+    @media (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 .header-contact__item {
-    // margin-left: 40px;
 
     @media (max-width: 1199px) {
         margin-bottom: 0;
     }
+    @media (min-width: 1200px) {
+        margin-left: 40px;
+    }
 
     &:first-child{
-        margin-left: 0;
-
+        
         @media (max-width: 1199px) {
             margin-bottom: 10px;
+        }
+        @media (min-width: 1200px) {
+            margin-left: 0;
         }
     }
 }
@@ -33,8 +39,6 @@
     color: var(--primary-text-color);
     fill: var(--primary-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     margin-left: auto;
@@ -45,6 +49,10 @@
     @media (max-width: 1199px) {
         font-size: 12px;
         line-height: 1.16;
+    }
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
     }
 
     &:hover,

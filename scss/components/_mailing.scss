@@ -16,6 +16,9 @@
         @media (max-width: 767px){
             text-align: center;
         }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            text-align: center;
+        }
     }
 
     &__icon {
@@ -30,6 +33,12 @@
     @media (max-width: 767px) {
         display: flex;
         flex-wrap: wrap;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     & input::placeholder {
@@ -47,6 +56,12 @@
     // max-height: 50px;
 
     @media (max-width: 767px) {
+        padding: 10px 64px 10px 31px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
         padding: 10px 64px 10px 31px;
         display: flex;
         margin-left: auto;
@@ -81,6 +96,14 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
+        width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        max-width: 450px;
         width: 100%;
     }
 

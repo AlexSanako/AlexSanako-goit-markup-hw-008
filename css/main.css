@@ -117,8 +117,8 @@ address {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 .logo__partheader {
@@ -128,14 +128,19 @@ address {
 .logo-footer {
   color: var(--color-text-action);
 }
+@media (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
 .logo-header {
   margin-right: 93px;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .logo-header {
-    font-size: 24px;
-    line-height: 1.16;
+    margin-right: 88px;
   }
 }
 
@@ -1239,11 +1244,9 @@ address {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 
@@ -1297,7 +1300,7 @@ address {
   color: var(--color-text-action);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .subscription {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1326,6 +1329,11 @@ address {
     margin-top: 60px;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .subscription__tittle {
+    text-align: center;
+  }
+}
 
 .subscription__link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -1350,6 +1358,11 @@ address {
     text-align: center;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mailing__tittle {
+    text-align: center;
+  }
+}
 .mailing__icon {
   position: absolute;
   fill: var(--primary-background-color);
@@ -1364,6 +1377,19 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mailing__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .mailing__box input::-webkit-input-placeholder {
@@ -1416,6 +1442,16 @@ address {
     margin-right: auto;
   }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mailing__button {
+    padding: 10px 64px 10px 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .mailing__button:hover, .mailing__button:focus {
   background-color: var(--background-color-hover);
   color: var(--color-text-action);
@@ -1450,6 +1486,18 @@ address {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mailing__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 450px;
     width: 100%;
   }
 }

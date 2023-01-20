@@ -3,8 +3,10 @@
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    // font-size: 26px;
+    // line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
 
     &__partheader{
@@ -14,13 +16,16 @@
 
 .logo-footer{
     color: var(--color-text-action);
+    @media (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
     
 }
 .logo-header {
     margin-right: 93px;
 
-    @media (max-width: 767px) {
-        font-size: 24px;
-        line-height: 1.16;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 88px;
     }
 }

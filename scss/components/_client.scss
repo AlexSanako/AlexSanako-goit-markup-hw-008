@@ -2,10 +2,11 @@
     // padding-left: 15px;
     // padding-right: 15px;
     @media (min-width: 1200px) {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
         padding-left: 15px;
         padding-right: 15px;
-        min-width: 1200px;
-        width: 100%;
     }
 
     &__title {
@@ -37,14 +38,15 @@
 
         @media (min-width: 320px) and (max-width: 767px) {
             flex-wrap: wrap;
-            // margin-top: 30px;
             text-align: center;
-            // gap: 26px;
         }
         @media (max-width: 1199px) {
             flex-wrap: wrap;
             margin-top: 0;
             text-align: center;
+        }
+        @media (min-width: 1200px) {
+            gap: 30px;
         }
     }
 }
@@ -52,31 +54,7 @@
 .client__item {
     height: 92px;
 
-    // &:nth-child(2n+1) {
-    //     @media (min-width: 320px) and (max-width: 767px) {
-    //         margin-left: 0;
-    //     }
-    // }
-    // &:nth-child(2n) {
-    //     @media (min-width: 320px) and (max-width: 767px) {
-    //         margin-right: 0;
-    //     }
-    // }
-    // &:nth-child(3n + 1) {
-    //     @media (min-width: 768px) and (max-width: 1199px) {
-    //         margin-left: 0;
-    //     }
-    // }
-    // &:nth-child(3n + 3) {
-
-    //     @media (min-width: 768px) and (max-width: 1199px) {
-    //         margin-right: 0;
-    //     }
-    // }
-
     @media (min-width: 320px) and (max-width: 767px) {
-        // max-width: 210px;
-        // width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
@@ -88,8 +66,6 @@
     }
 
     @media (min-width: 768px) and (max-width: 1199px) {
-        // max-width: 226px;
-        // width: 100%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
@@ -100,11 +76,7 @@
         }
     }
     @media (min-width: 1200px) {
-        // max-width: 170px;
-        // width: 100%;
         flex-basis: calc((100% - 5 * 30px)/6);
-        margin-left: auto;
-        margin-right: auto;
 
         &:first-child {
             margin-left: 0;
@@ -132,9 +104,8 @@
         fill: var(--accent-color);
         border-color: var(--accent-color);
     }
-
-    // @media (max-width: 767px) {
-    //     max-width: 210px;
-    //     width: 100%;
-    // }
+    @media (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+    }
 }

@@ -91,6 +91,7 @@
     }
     @media (min-width: 768px) and (max-width: 1199px) {
         flex-wrap: wrap;
+        // gap: 30px;
     }
     @media (min-width: 1200px) {
         align-items: center;

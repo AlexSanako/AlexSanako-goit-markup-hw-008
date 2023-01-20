@@ -1,7 +1,8 @@
 .mailing {
-    // margin-left: 93px;
     
-    // max-width: 480px;
+    @media (min-width: 1200px) {
+        margin-left: 94px;
+    }
    
 
     &__tittle {
@@ -29,13 +30,13 @@
     }
 }
 .mailing__box {
-    
+    display: flex;
     @media (max-width: 767px) {
-        display: flex;
+        
         flex-wrap: wrap;
     }
     @media (min-width: 768px) and (max-width: 1199px) {
-        display: flex;
+        
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
@@ -51,9 +52,6 @@
 }
 .mailing__button {
     position: relative;
-    padding: 10px 62px 10px 28px;
-    // margin-left: 12px;
-    // max-height: 50px;
 
     @media (max-width: 767px) {
         padding: 10px 64px 10px 31px;
@@ -66,6 +64,11 @@
         display: flex;
         margin-left: auto;
         margin-right: auto;
+    }
+    @media (min-width: 1200px) {
+        padding: 10px 62px 10px 28px;
+        margin-left: 12px;
+        max-height: 50px;
     }
 
     &:hover,

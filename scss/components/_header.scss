@@ -11,16 +11,11 @@
         padding-bottom: 16px;
     }
 
-    // &__box {
-    //     // 
-    //     @media (max-width: 767px) {
-    //         display: none;
-    //     }
-
-    //     @media (max-width: 1199px) {
-    //         display: flex;
-    //     }
-    // }
+    @media (min-width: 1200px) {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     &__container{
 

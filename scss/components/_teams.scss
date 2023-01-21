@@ -1,7 +1,5 @@
 .teams {
     background-color: var(--primary-color);
-    // padding-left: 15px;
-    // padding-right: 15px;
     
     &__title {
         color: var(--tittle-text-color);
@@ -97,9 +95,9 @@
         align-items: center;
         justify-content: center;
         list-style-type: none;
-
-        & .teams__card:last-child {
-         margin-right: 0;
-        }
+        gap: 30px;
+        // & .teams__card:last-child {
+        //  margin-right: 0;
+        // }
     }
 }

@@ -1096,26 +1096,24 @@ address {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media (max-width: 767px) {
+  .teams__card {
+    width: 450px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .teams__card {
-    margin-right: 0;
+    width: 354px;
   }
-  .teams__card:not(:last-child) {
-    margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .teams__card {
+    width: 270px;
   }
 }
 .teams__card-bottom {
   padding-top: 30px;
-}
-@media (max-width: 767px) {
-  .teams__card-bottom {
-    padding-bottom: 24px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .teams__card-bottom {
-    padding-bottom: 24px;
-  }
+  padding-bottom: 24px;
 }
 @media (min-width: 1200px) {
   .teams__card-bottom {
@@ -1144,6 +1142,7 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
 }
 @media (max-width: 767px) {
   .teams__list {
@@ -1168,7 +1167,6 @@ address {
         -ms-flex-pack: center;
             justify-content: center;
     list-style-type: none;
-    gap: 30px;
   }
 }
 

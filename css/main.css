@@ -55,12 +55,26 @@ address {
   margin: -1px;
 }
 
-.container.adaptive {
-  width: 1200px;
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 :root {
@@ -82,8 +96,6 @@ address {
 .header {
   border-bottom: var(--border-color);
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media (max-width: 767px) {
   .header {
@@ -896,17 +908,6 @@ address {
   cursor: pointer;
 }
 
-.benefits {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 1200px) {
-  .benefits {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .benefits__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -928,12 +929,11 @@ address {
         align-content: center;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .benefits__box {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    width: 354px;
   }
 }
 @media (min-width: 1200px) {
@@ -981,8 +981,9 @@ address {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .benefits__list {
+    gap: 30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -997,10 +998,7 @@ address {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .benefits__items {
-    margin-left: auto;
-    margin-right: auto;
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    width: 354px;
   }
 }
 @media (min-width: 1200px) {
@@ -1068,8 +1066,6 @@ address {
 
 .teams {
   background-color: var(--primary-color);
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .teams__title {
   color: var(--tittle-text-color);
@@ -1099,16 +1095,6 @@ address {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-right: 30px;
-}
-@media (max-width: 767px) {
-  .teams__card {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .teams__card:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .teams__card {
@@ -1233,15 +1219,6 @@ address {
   fill: var(--color-text-action);
 }
 
-@media (min-width: 1200px) {
-  .client {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 .client__title {
   color: var(--tittle-text-color);
   font-weight: 700;
@@ -1276,17 +1253,22 @@ address {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .client__list {
+    gap: 30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .client__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 0;
     text-align: center;
+    gap: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -1300,26 +1282,12 @@ address {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .client__item {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
-  }
-  .client__item:nth-last-child(-n+3) {
-    margin-bottom: 0;
+    width: 210px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .client__item {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    -ms-flex-preferred-size: calc((100% - 90px) / 3);
-        flex-basis: calc((100% - 90px) / 3);
-  }
-  .client__item:nth-child(-n+3) {
-    margin-top: 0;
+    width: 226px;
   }
 }
 @media (min-width: 1200px) {
@@ -1370,8 +1338,6 @@ address {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media (min-width: 1200px) {
   .footer__container {

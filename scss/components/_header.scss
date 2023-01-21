@@ -2,8 +2,8 @@
 .header {
     border-bottom: var(--border-color);
     position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
+    // padding-left: 15px;
+    // padding-right: 15px;
 
     @media (max-width: 767px) {
         border: inherit;

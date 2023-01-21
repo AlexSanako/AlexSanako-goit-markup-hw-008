@@ -26,7 +26,8 @@
         <button
           class="menu-mobile__toggle js-open-menu header__button"
           aria-expanded="false"
-          aria-controls="mobile-menu">
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-mobile__icon" width="24" height="16">
             <use href="./images/symbol-defs.svg#icon-mob-open"></use>
           </svg>
@@ -34,7 +35,11 @@
         <nav class="header-menu">
           <ul class="header-menu__list">
             <li class="header-menu__item header-menu__item--current">
-              <a class="header-menu__link header-menu__link--current" href="./index.html">Студія</a>
+              <a
+                class="header-menu__link header-menu__link--current"
+                href="./index.html"
+                >Студія</a
+              >
             </li>
             <li class="header-menu__item">
               <a class="header-menu__link" href="./portfolio.html">Портфоліо</a>
@@ -64,7 +69,6 @@
           </li>
         </ul>
 
-
         <!-- MOBILE MENU -->
         <div class="menu-mobile js-menu-container" id="mobile-menu">
           <button class="menu-mobile__toggle js-close-menu">
@@ -72,14 +76,20 @@
               <use href="./images/symbol-defs.svg#icon-mob-close"></use>
             </svg>
           </button>
-          
+
           <nav class="menu-mobile__nav">
             <ul class="menu-mobile__list">
               <li class="menu-mobile__item">
-                <a class="menu-mobile__link menu-mobile__link--current" href="./index.html">Студія</a>
+                <a
+                  class="menu-mobile__link menu-mobile__link--current"
+                  href="./index.html"
+                  >Студія</a
+                >
               </li>
               <li class="menu-mobile__item">
-                <a class="menu-mobile__link" href="./portfolio.html">Портфоліо</a>
+                <a class="menu-mobile__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li class="menu-mobile__item">
                 <a class="menu-mobile__link" href="/">Контакти</a>
@@ -89,10 +99,16 @@
           <div class="menu-mobile-contact">
             <ul class="menu-mobile-contact__list">
               <li class="menu-mobile-contact__item">
-                <a href="tel:+380961111111" class="menu-mobile-contact__tell">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="menu-mobile-contact__tell"
+                  >+38 096 111 11 11</a
+                >
               </li>
               <li class="menu-mobile-contact__item">
-                <a href="maito:info@devstudio.com" class="menu-mobile-contact__post">info@devstudio.com</a>
+                <a
+                  href="maito:info@devstudio.com"
+                  class="menu-mobile-contact__post"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
             <div class="menu-mobile-social">
@@ -122,13 +138,18 @@
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__tittle">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button hero__button--primary" data-modal-open>Замовити послугу</button>
-    
+          <button
+            type="button"
+            class="button hero__button--primary"
+            data-modal-open
+          >
+            Замовити послугу
+          </button>
+
           <!-- Модальне вікно -->
 
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-
               <div class="modal__container">
                 <button data-modal-close class="modal__button">
                   <svg class="modal__icon" width="18" height="18">
@@ -138,13 +159,20 @@
               </div>
 
               <!-- Поле для заповнення -->
-              
-              <h3 class="modal__tittle">Залиште свої дані, ми вам передзвонимо</h3>
+
+              <h3 class="modal__tittle">
+                Залиште свої дані, ми вам передзвонимо
+              </h3>
               <form class="form">
                 <div class="modal__form-field form-field">
                   <label for="user-name" class="form-field__label">Ім'я</label>
                   <div class="form-field__control">
-                    <input type="text" name="user-name" id="user-name" class="form-field__input">
+                    <input
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                      class="form-field__input"
+                    />
                     <svg class="form-field__icon" width="18" height="18">
                       <use href="./images/symbol-defs.svg#icon-modalname"></use>
                     </svg>
@@ -154,9 +182,16 @@
                 <div class="modal__form-field form-field">
                   <label for="tel" class="form-field__label">Телефон</label>
                   <div class="form-field__control">
-                    <input type="tel" name="tel" id="tel" class="form-field__input">
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      class="form-field__input"
+                    />
                     <svg class="form-field__icon" width="18" height="18">
-                      <use href="./images/symbol-defs.svg#icon-modalphone"></use>
+                      <use
+                        href="./images/symbol-defs.svg#icon-modalphone"
+                      ></use>
                     </svg>
                   </div>
                 </div>
@@ -164,27 +199,51 @@
                 <div class="modal__form-field form-field">
                   <label for="mail" class="form-field__label">Пошта</label>
                   <div class="form-field__control">
-                    <input type="email" name="mail" id="mail" class="form-field__input">
+                    <input
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      class="form-field__input"
+                    />
                     <svg class="form-field__icon" width="18" height="18">
-                      <use href="./images/symbol-defs.svg#icon-modalemail"></use>
+                      <use
+                        href="./images/symbol-defs.svg#icon-modalemail"
+                      ></use>
                     </svg>
                   </div>
                 </div>
 
                 <div class="modal__form-field form-field">
-                  <label for="comment" class="form-field__label">Коментар</label>
-                  <textarea name="comment" id="comment" rows="7" placeholder="Введіть текст" class="form-field__input form-field__input--comment "></textarea>
+                  <label for="comment" class="form-field__label"
+                    >Коментар</label
+                  >
+                  <textarea
+                    name="comment"
+                    id="comment"
+                    rows="7"
+                    placeholder="Введіть текст"
+                    class="form-field__input form-field__input--comment"
+                  ></textarea>
                 </div>
 
                 <div class="modal-check">
-                  <label for="check" class="modal-check__verification">Погоджуюся з розсилкою та приймаю <a href="#" class="modal-check__link">Умови договору</a>
-                    <input type="checkbox" name="check" id="check" class="modal-check__input">
+                  <label for="check" class="modal-check__verification"
+                    >Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="modal-check__link">Умови договору</a>
+                    <input
+                      type="checkbox"
+                      name="check"
+                      id="check"
+                      class="modal-check__input"
+                    />
                     <svg class="modal-check__icon" width="16" height="15">
                       <use href="./images/symbol-defs.svg#icon-check"></use>
                     </svg>
                   </label>
                 </div>
-                <button type="submit" class="button modal-check__button">Відправити</button>
+                <button type="submit" class="button modal-check__button">
+                  Відправити
+                </button>
               </form>
             </div>
           </div>
@@ -255,30 +314,31 @@
             <li class="work__img">
               <div class="work__thumb">
                 <img
-                src="./images/section2/office.jpg"
-                alt="крупним планом зображення програміста, який працює на робочому столі в офісі"
-                width="370"/>
+                  src="./images/section2/office.jpg"
+                  alt="крупним планом зображення програміста, який працює на робочому столі в офісі"
+                  width="370"
+                />
                 <p class="work__subtitle">ДЕСКТОПНІ ДОДАТКИ</p>
               </div>
             </li>
             <li class="work__img">
               <div class="work__thumb">
                 <img
-                src="./images/section2/web_interface.jpg"
-                alt="дизайнери веб-інтерфейсу розробляють програми для смартфонів"
-                width="370"
-              />
-              <p class="work__subtitle">МОБІЛЬНІ ДОДАТКИ</p>
+                  src="./images/section2/web_interface.jpg"
+                  alt="дизайнери веб-інтерфейсу розробляють програми для смартфонів"
+                  width="370"
+                />
+                <p class="work__subtitle">МОБІЛЬНІ ДОДАТКИ</p>
               </div>
             </li>
             <li class="work__img">
               <div class="work__thumb">
                 <img
-                src="./images/section2/web_design.jpg"
-                alt="творчий художник веб-дизайн із робочим графічним планшетом із вибором кольорів"
-                width="370"
-              />
-              <p class="work__subtitle">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+                  src="./images/section2/web_design.jpg"
+                  alt="творчий художник веб-дизайн із робочим графічним планшетом із вибором кольорів"
+                  width="370"
+                />
+                <p class="work__subtitle">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
               </div>
             </li>
           </ul>
@@ -551,7 +611,9 @@
                   >
                 </li>
                 <li class="contacts-group__item">
-                  <a href="maito:info@devstudio.com" class="contacts-group__link"
+                  <a
+                    href="maito:info@devstudio.com"
+                    class="contacts-group__link"
                     >info@devstudio.com</a
                   >
                 </li>
@@ -568,28 +630,44 @@
             <ul class="social">
               <li class="social__item">
                 <a href="#" class="social__link subscription__link">
-                  <svg class="social__icon subscription__icon" width="20" height="20">
+                  <svg
+                    class="social__icon subscription__icon"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link subscription__link">
-                  <svg class="social__icon subscription__icon" width="20" height="20">
+                  <svg
+                    class="social__icon subscription__icon"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link subscription__link">
-                  <svg class="social__icon subscription__icon" width="20" height="20">
+                  <svg
+                    class="social__icon subscription__icon"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link subscription__link">
-                  <svg class="social__icon subscription__icon" width="20" height="20">
+                  <svg
+                    class="social__icon subscription__icon"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -598,17 +676,24 @@
           </div>
         </div>
 
-          <form class="mailing">
-            <p class="mailing__tittle">Підпишіться на розсилку</p>
-            <div class="mailing__box">
-              <input type="email" name="mail" id="email" placeholder="E-mail" class="mailing__input">
-              <button type="submit" class="button mailing__button">Підписатися
-                <svg class="mailing__icon" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+        <form class="mailing">
+          <p class="mailing__tittle">Підпишіться на розсилку</p>
+          <div class="mailing__box">
+            <input
+              type="email"
+              name="mail"
+              id="email"
+              placeholder="E-mail"
+              class="mailing__input"
+            />
+            <button type="submit" class="button mailing__button">
+              Підписатися
+              <svg class="mailing__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
@@ -621,4 +706,3 @@
     <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
-

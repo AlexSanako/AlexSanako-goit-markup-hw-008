@@ -32,15 +32,15 @@
     transition-property: visibility, opacity, scale; 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-    // min-height: 581px;
-    // min-width: 528px;
     background-color:var(--primary-background-color);
+    overflow: scroll;
 
     @media (min-width: 460px) and (max-width: 767px)  {
         max-height: 609px;
         max-width: 450px;
         width: 100%;
         height: 100%;
+        
     }
     @media (min-width: 768px) and (max-width: 1199px) {
         max-height: 609px;
@@ -48,6 +48,7 @@
         width: 100%;
         height: 100%;
     }
+    
 
     &__container {
         display: flex;

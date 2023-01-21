@@ -1,4 +1,4 @@
-.hero{
+.hero {
     background-color: rgba(47, 48, 58, 0.4);;
     max-width: 1600px;
     margin-left: auto;
@@ -8,25 +8,69 @@
          rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)
          ),
-         url(../images/hero.jpg);
+         url(/images/hero/hero-1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 118px;
+    padding-bottom: 198px;
 
-    @media (max-width: 767px) {
-        padding-top: 118px;
-        padding-bottom: 198px;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(/images/hero/hero-2x.jpg);
+        }
     }
 
-    @media (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
         padding-top: 118px;
         padding-bottom: 188px;
-    }
+        background-image: linear-gradient(
+            to right,
+             rgba(47, 48, 58, 0.4),
+             rgba(47, 48, 58, 0.4)), 
+             url(/images/hero/hero-768-1x.jpg);
 
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(
+                    to right,
+                     rgba(47, 48, 58, 0.4),
+                     rgba(47, 48, 58, 0.4)),
+                    url(/images/hero/hero-768-2x.jpg);
+            }
+        }
+    }
     @media (min-width: 1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
+        background-image: linear-gradient(
+            to right,
+             rgba(47, 48, 58, 0.4),
+             rgba(47, 48, 58, 0.4)), 
+             url(/images/hero/hero-1600-1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(
+                    to right,
+                     rgba(47, 48, 58, 0.4),
+                     rgba(47, 48, 58, 0.4)),
+                    url(/images/hero/hero-1600-2x.jpg);
+            }
+        }
     }
+
+
+    
 
     &__container {
         text-align: center;
@@ -72,4 +116,3 @@
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 }
-

@@ -516,14 +516,6 @@ address {
   padding-top: 118px;
   padding-bottom: 198px;
 }
-@media (max-width: 480px) {
-  .hero {
-    width: 480px;
-    height: 400px;
-    background-image: url(/images/hero/hero-1x.jpg);
-    background-size: 480px 400px;
-  }
-}
 @media (max-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) and (min-resolution: 192dpi), (max-width: 480px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(/images/hero/hero-2x.jpg);

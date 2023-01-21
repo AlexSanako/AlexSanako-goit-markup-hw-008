@@ -12,10 +12,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 118px;
+    padding-bottom: 198px;
 
-    @media (max-width: 767px) {
-        padding-top: 118px;
-        padding-bottom: 198px;
+    @media (max-width: 480px) {
+        width: 480px;
+        height: 400px;
+        background-image: url(/images/hero/hero-1x.jpg);
+        background-size: 480px 400px;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(/images/hero/hero-2x.jpg);
+        }
     }
 
     @media (max-width: 1199px) {

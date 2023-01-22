@@ -7,9 +7,22 @@
     }
     @media (max-width: 1199px) {
         flex-direction: column;
+        margin-left: auto;
     }
     @media (min-width: 1200px) {
         margin-left: auto;
+    }
+    &__icon--post {
+        @media (max-width: 1199px) {
+            width: 14px;
+            height: 10px;
+        }
+    }
+    &__icon--tell {
+        @media (max-width: 1199px) {
+            width: 10px;
+            height: 14px;
+        }
     }
 }
 .header-contact__item {

@@ -6,23 +6,18 @@
     // padding-right: 15px;
 
     @media (max-width: 767px) {
-        border: inherit;
+        // border: inherit;
         padding-top: 16px;
         padding-bottom: 16px;
     }
 
-    @media (min-width: 1200px) {
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     &__container{
         
         @media (max-width: 1199px) {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            
         }
         @media (min-width: 1200px) {
             display: flex;

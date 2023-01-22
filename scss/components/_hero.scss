@@ -13,7 +13,7 @@
     background-size: cover;
     background-position: center;
     padding-top: 118px;
-    padding-bottom: 198px;
+    padding-bottom: 118px;
 
     @media (max-width: 480px) {
 
@@ -37,8 +37,6 @@
     }
 
     @media (max-width: 1199px) {
-        padding-top: 118px;
-        padding-bottom: 188px;
         background-image: linear-gradient(
             to right,
                 rgba(47, 48, 58, 0.4),

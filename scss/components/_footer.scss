@@ -8,6 +8,7 @@
         @media (min-width: 1200px) {
             display: flex;
             align-items: baseline;
+            justify-content: space-between;
         }
     }
     
@@ -22,6 +23,7 @@
         @media (min-width: 768px) and (max-width: 1199px) {
             text-align: center;
         }
+        
     }
     &__box {
         display: flex;
@@ -29,6 +31,7 @@
             flex-direction: column;
             align-content: center;
             text-align: center;
+            margin-bottom: 60px;
         }
         @media (min-width: 768px) and (max-width: 1199px) {
             flex-direction: row;
